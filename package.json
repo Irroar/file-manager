@@ -1,0 +1,19 @@
+{
+  "name": "file-manager",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Irroar/file-manager.git"
+  },
+  "author": "irroar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Irroar/file-manager/issues"
+  },
+  "homepage": "https://github.com/Irroar/file-manager#readme"
+}
