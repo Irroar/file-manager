@@ -1,9 +1,7 @@
 import { appendFile } from 'fs/promises';
-import { join } from 'path';
 import { isExists } from '../utils/exist.js';
 
-export const create = async (currentDir, fileName) => {
-  const pathToFile = join(currentDir, fileName);
+export const create = async (pathToFile) => {
   try {
     const isFileExists = await isExists(pathToFile);
     if (isFileExists) {

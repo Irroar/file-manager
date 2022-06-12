@@ -13,7 +13,8 @@ export const compress = async (pathToFile, pathToDestinationFolder) => {
   
   try {
     await pipe(sourseReadStream, gzipTransformStream, destinationWriteStream);
+    console.log('Compression complete');
   } catch(err) {
-    console.log(err);
+    console.log('Operation failed');
   }
 };

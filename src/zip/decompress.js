@@ -13,6 +13,7 @@ export const decompress = async (pathToFile, pathToDestinationFolder) => {
   
   try {
     await pipe(sourseReadStream, gzipTransformStream, destinationWriteStream);
+    console.log('Decompression complete');
   } catch(err) {
     console.log('Operation failed');
   }

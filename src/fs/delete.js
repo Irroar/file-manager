@@ -10,6 +10,7 @@ export const remove = async (pathToFile, silentMode=false) => {
     await rm(pathToFile);
     if (!silentMode) { console.log('File deleted successfully'); }
   } catch(err) {
+    if (silentMode) { throw err; }
     console.log('Operation failed');
   }
 };
