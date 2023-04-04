@@ -1,27 +1,34 @@
 # Simple CLI File Manager
 
-### Описание таска по ссылке https://github.com/AlreadyBored/nodejs-assignments/blob/main/assignments/file-manager/assignment.md
+File Manager implementation using Node.js APIs.
 
-## Как запускать:
+## How to run:
 
 ```
 npm run start -- --username=your_username
 ```
 
+## Supported operations
+  - Navigation & working directory (nwd): **up**, **cd**, **ls**
+  - Basic operations with files: **cat**, **add**, **rn**, **cp**, **mv**, **rm**
+  - Operating system info: **os** --EOL, --cpus, --homedir, --username, --architecture
+  - Hash calculation: **hash**
+  - Compress and decompress operations: **compress**, **decompress**
+
 ## Compress and decompress operations
 
-При выполнении операций архивации и разархивации, пожалуйста, указывайте путь к файлу вместе с его расширением, например:
+When performing archive and unzip operations, please specify the path to the file along with its extension, for example:
 
 ```
 compress myfile.txt myarchive.br
 ```
 
-## Реакция на бОльшее количество аргументов
+## Reaction to more amount of arguments than expected
 
-На данный момент при вводе бОльшего количества аргументов лишние отбрасываются, например:
+At this point, when entering a large number of arguments, the extra ones are discarded, for example:
 
 ```
 add new_file.md one_more_file.md
 ```
 
-Будет создан лишь *new_file.md*, а *one_more_file.md* проигнорируется.
+Will be created just *new_file.md*, and *one_more_file.md* will be ignored.
